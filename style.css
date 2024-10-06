@@ -126,5 +126,7 @@ p{
     }
     .conteiner .boxs{
         margin: 80px 10px 0 10px;
+        width: 333px;
+        grid-template-columns: 105px 105px 105px;
     }
 }
