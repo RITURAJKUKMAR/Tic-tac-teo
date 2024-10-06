@@ -40,7 +40,8 @@ footer a:hover{
     display: flex;
     justify-content: space-around;
 }
-.conteiner .boxs{
+
+.boxs{
     width: 500px;
     height: 500px;
     margin: 50px 0 0 80px;
@@ -53,6 +54,7 @@ footer a:hover{
     grid-template-rows: 32.1% 32.2% 32.1%;
     box-shadow: 0px 0px 50px;
 }
+
 
 .box{
     background-color: black;
@@ -92,12 +94,16 @@ footer a:hover{
 .ans{
     width: 500px;
     height: 500px;
-    margin: 50px 80px 0 0;
+    margin: 50px 0 0 80px;
     border-radius: 10px;
     box-shadow: 0px 0px 50px;
     background-color: red;
     display: flex;
     justify-content: center;
+}
+
+.hide {
+    display: none;
 }
 
 .ans .o-x{
@@ -115,14 +121,16 @@ p{
     font-size: 40px;
 }
 
+
 @media screen and (max-width: 1000px){
     .conteiner{
         display: flex;
         flex-wrap: wrap;
-        height: 200vh;
+        height: 100vh;
     }
     .ans{
-        margin: 0px 10px 0 10px;
+        margin: 80px 10px 0 10px;
+        height: 600px;
     }
     .conteiner .boxs{
         margin: 80px 10px 0 10px;

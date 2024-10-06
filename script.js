@@ -1,9 +1,15 @@
+let boxs=document.querySelector(".boxs");
+let ans=document.querySelector(".ans");
+ans.classList.add("hide");
+
+
 let box = document.querySelectorAll(".box");
 let value = "X";
 let para=document.querySelectorAll("p");
 
 box[0].addEventListener("click", () => {
     game(box[0]);
+    box.disabled=true;
 })
 box[1].addEventListener("click", () => {
     game(box[1]);
@@ -40,6 +46,8 @@ function game(boxans) {
             para[0].innerText="X - WON";
             para[1].innerText="O - LOST";
             para[2].innerText="GEME END";
+            boxs.classList.add("hide");
+            ans.classList.remove("hide");
         }
         value = "O";
     }
@@ -51,6 +59,8 @@ function game(boxans) {
             para[0].innerText="O - WON";
             para[1].innerText="X - LOST";
             para[2].innerText="GEME END";
+            boxs.classList.add("hide");
+            ans.classList.remove("hide");
         }
         value = "X";
     }
